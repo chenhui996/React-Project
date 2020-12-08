@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Loading from "./Loading";
 import Tours from "./Tours";
-import Nav from "./Nav"
+import Nav from "./Nav";
 // ATTENTION!!!!!!!!!!
 // I SWITCHED TO PERMANENT DOMAIN
 const url = "https://course-api.com/react-tours-project";
@@ -12,7 +12,7 @@ function App() {
   const removeTour = (id) => {
     const newTours = tours.filter((tour) => tour.id !== id);
     setTours(newTours);
-  }
+  };
 
   const fetchTours = async () => {
     setLoading(true);
@@ -37,15 +37,23 @@ function App() {
         <Loading />
       </main>
     );
-  } else if(tours.length === 0) {
+  } else if (tours.length === 0) {
     return (
       <main>
         <Nav />
         <div className="title">
           <h2>没有旅游了</h2>
+          <button
+            className="btn"
+            onClick={() => {
+              fetchTours();
+            }}
+          >
+            重新获取
+          </button>
         </div>
       </main>
-    )
+    );
   }
   return (
     <main>
