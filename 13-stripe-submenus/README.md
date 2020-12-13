@@ -9,7 +9,7 @@
 ---
 
 - ![视觉](./public/main.png "SubMenu PC")
-- ![视觉](./public/main.png "SubMenu Phone")
+- ![视觉](./public/phone.png "SubMenu Phone")
 
 ## react-icon
 
