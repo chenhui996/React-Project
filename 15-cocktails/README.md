@@ -14,4 +14,4 @@
 ---
 
 - ![视觉](./public/main.png "List")
-- ![视觉](./public/detail.png "Details")
+- ![视觉](./public/details.png "Details")
